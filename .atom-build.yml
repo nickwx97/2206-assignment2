@@ -1,0 +1,3 @@
+cmd: "wsl emojicodec $(wslpath '{FILE_ACTIVE}') && wsl $(wslpath '{FILE_ACTIVE_PATH}')/{FILE_ACTIVE_NAME_BASE}"
+name: {FILE_ACTIVE}
+sh: true
