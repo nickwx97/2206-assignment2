@@ -1,0 +1,35 @@
+📦 sockets 🏠
+
+💭 Simple echo server listening on port 8888
+🏁 ➡️ 🔢 🍇
+
+	💭Starts listening on 8888
+	🍺🆕🏄 8888❗️ ➡️ server
+	😀🔤Started listener on 8888🔤❗
+
+	🔁👍🍇
+		💭 Opens socket with client
+		🍺 🙋 server❗️ ➡️ clientSocket
+		🛂🆕🧵 🍇 🎍🥡
+			🔁👍🍇
+				💭Read 1024 bytes
+				🆗 data 👂 clientSocket 1024❗️ 🍇
+					🍺 💬 clientSocket data❗️
+					🔡📏data❓❗ ➡ length
+					😀🔤length read: 🧲length🧲❌n❌n🔤❗
+					😀 🍺 🔡 data❗️❗️
+					↪❎🤜length 🙌 🔤0🔤 🤛❗🍇
+						😀🔤end reached🔤❗
+						↩↩
+					🍉
+				🍉 🙅‍♀️ error 🍇
+					😀🔤Error🔤❗
+				🍉
+			🍉
+			😀🔤Closing socket🔤❗
+			🚪clientSocket❗️
+		🍉❗❗
+	🍉
+	😀🔤End of server code❗❗❗🔤❗
+	↩ 0
+🍉
