@@ -22,6 +22,14 @@
 						😀🔤GET received🔤❗
 						🔍data 📇🔤❌r❌n🔤❗ 0❗ ➡ offset
 						😀🔡🍺offset❗❗
+						🔪data 0 🍺offset❗ ➡ requestline
+
+						🍺🔡requestline❗ ➡ asciirequestline
+						😀🔤Request line: 🧲asciirequestline🧲🔤❗
+
+						🔫asciirequestline 🔤 🔤❗ ➡ requestlist
+						🐽requestlist 1❗ ➡ dir
+						😀🔤Requested Directory: 🧲dir🧲🔤❗
 					🍉
 					↪❎🤜length 🙌 🔤0🔤 🤛❗🍇
 						😀🔤End of request data🔤❗
