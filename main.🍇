@@ -1,7 +1,22 @@
 📦 sockets 🏠
+📦 files 🏠
 
 💭 Simple echo server listening on port 8888
 🏁 ➡️ 🔢 🍇
+	🕴🐇💻🔤SCRIPT=$(pwd)/; echo $SCRIPT > currentdir; chmod 600 currentdir🔤 ❗
+	😀🔤Created Dir file🔤❗
+
+	🆗dirbytes 📇🐇📄🔤currentdir🔤❗ 🍇
+		😀🍺🔡dirbytes❗❗
+	🍉
+	🙅‍♀️error🍇🍉
+
+
+	🍺🆕📄▶️📜 🔤currentdir🔤❗️ ➡️ readFile
+	😀🔤Dir file opened🔤❗
+
+	🚪readFile❗
+	😀🔤Dir file closed🔤❗
 
 	💭Starts listening on 8888
 	🍺🆕🏄 8888❗️ ➡️ server
@@ -30,6 +45,13 @@
 						🔫asciirequestline 🔤 🔤❗ ➡ requestlist
 						🐽requestlist 1❗ ➡ dir
 						😀🔤Requested Directory: 🧲dir🧲🔤❗
+
+						🍺🆕📄▶️📜 dir❗️ ➡️ readFile
+						😀🔤File opened🔤❗
+
+						🚪readFile❗
+						😀🔤File closed🔤❗
+
 					🍉
 					↪❎🤜length 🙌 🔤0🔤 🤛❗🍇
 						😀🔤End of request data🔤❗
