@@ -1,117 +1,114 @@
 📦 sockets 🏠
 📦 files 🏠
 
-🐇 💾 🍇
+🐇 🕸 🍇
+
+	🐇❗ 📛 ➡ 🔡🍇
+		↩ 🔤emojicode-httpd🔤 💭server name
+	🍉
+
+	🐇❗ 👹 ➡ 🔡🍇
+		↩ 🔤testhtml/404.html🔤 💭fancy 404
+	🍉
+
+	🐇❗ 😎 clientSocket 📞 readFile 📇 🍇
+		😀🔤200 OK🔤❗
+		📏readFile❓➡conlen
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nCache-Control: max-age=3600❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ readFile❗️
+	🍉
+
 	🐇❗ 😠 clientSocket 📞🍇
-		😀🔤Sending 404...🔤❗
-		🍺 📇🐇📄🔤testhtml/404.html🔤❗ ➡ errpage
-		📏errpage❓ ➡ conlen
-		🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found
-Content-Length: 🧲conlen🧲
-Vary: Accept-Encoding
-Content-Type: text/html
-Connection: close❌r❌n❌r❌n🔤❗ ➕ errpage❗
+		😀🔤404 Not Found🔤❗
+		🆗 errpage 📇🐇📄👹❗❗ 🍇
+			📏errpage❓ ➡ conlen
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ errpage❗
+		🍉
+		🙅‍♀️ error 🍇
+			😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 49❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌nUhh... 404 page... 404? That's even more awkward.🔤❗❗
+		🍉
+	🍉
+
+	🐇❗ 🤔 clientSocket 📞 path 🔡 host🔡🍇
+		😀🔤301 Moved Permanently🔤❗
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 301 Moved Permanently❌r❌nServer: 🧲📛❗🧲❌r❌nLocation: http://🧲host🧲🧲path🧲index.html❌r❌n❌r❌n🔤❗❗
+	🍉
+
+	🐇❗ 🏥 data 📇 ➡ 🔡🍇
+		↩🐽🔫🐽🔫🍺🔡data❗ 🔤Host: 🔤❗ 1❗ 🔤❌r❌n🔤❗ 0❗
 	🍉
 🍉
 
-💭 Simple echo server listening on port 8888
+💭 Simple HTTP server listening on port 8888
 🏁 ➡️ 🔢 🍇
 
 	🕴🐇💻🔤SCRIPT=$(pwd); echo -n $SCRIPT > currentdir; chmod 600 currentdir🔤 ❗
-	😀🔤Created Dir file🔤❗
-
 	📇🔤/🔤❗➡🖍🆕dirbytes
 	🆗tempdirbytes 📇🐇📄🔤currentdir🔤❗ 🍇
 		tempdirbytes➡🖍dirbytes
-		😀🍺🔡dirbytes❗❗
 	🍉
 	🙅‍♀️error🍇
 		😀🔤🤯Error: 🧲💬error❗🧲🔤❗
 		🚪🐇💻-1❗
 	🍉
-
-	😀🍺🔡dirbytes❗❗
-
-	💭Starts listening on 8888
 	🍺🆕🏄 8888❗️ ➡️ server
-	😀🔤Started listener on 8888🔤❗
-
+	😀🔤🧲📛🐇🕸❗🧲 Started❌n🔤❗
+	😀🔤****************************🔤❗
 	🔁👍🍇
-		💭 Opens socket with client
 		🍺 🙋 server❗️ ➡️ clientSocket
 		🛂🆕🧵 🍇 🎍🥡
 			🔁👍🍇
-				💭Read 8192 bytes (max size for HTTP requests)
-				🆗 data 👂 clientSocket 8192❗️ 🍇
-
-					💭 echos client request back
-					💭🍺 💬 clientSocket data❗️
-
-
-
+				🆗 data 👂 clientSocket 8192❗️ 🍇 💭Read 8192 bytes (max size for HTTP requests)
 					🔡📏data❓❗ ➡ length
-					😀🔤length read: 🧲length🧲❌n❌n🔤❗
 					😀🍺🔡 data❗️❗️
-					↪🍺🔡🔪data 0 3❗❗ 🙌 🔤GET🔤🍇
-						😀🔤GET received🔤❗
+					↪🍺🔡🔪data 0 3❗❗ 🙌 🔤GET🔤🍇 💭Process GET
 						🔍data 📇🔤❌r❌n🔤❗ 0❗ ➡ offset
-						😀🔡🍺offset❗❗
 						🔪data 0 🍺offset❗ ➡ requestline
-
 						🍺🔡requestline❗ ➡ asciirequestline
-						😀🔤Request line: 🧲asciirequestline🧲🔤❗
-
 						🔫asciirequestline 🔤 🔤❗ ➡ requestlist
 						🐽requestlist 1❗ ➡ dir
-						😀🔤Requested Directory: 🧲dir🧲🔤❗
-
 						↪⛳dir 🔤/🔤❗️🍇
-							😀🔤Ends with /🔤❗
-							💭 return 404, then exit thread(?)
-							😠🐇💾 clientSocket❗
+							🏥🐇🕸 data ❗ ➡ host
+							🤔🐇🕸 clientSocket dir host❗
 
-							😀🔤Closing socket🔤❗
 							🚪clientSocket❗️
-							😀🔤End of thread🔤❗
+							😀🔤****************************🔤❗
 							↩↩
 						🍉
 						dirbytes ➕ 📇dir❗ ➡fp
-						😀🔤❌n❌n🧲🍺🔡fp❗🧲❌n❌n🔤❗
-
 						🆗 readFile 📇🐇📄 🍺🔡fp❗ ❗ 🍇
-							💭 return data to client, insert http 200 first
-							😀🔤Sending data to client!🔤❗
-							📏readFile❓➡conlen
-							🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK
-Content-Length: 🧲conlen🧲
-Vary: Accept-Encoding
-Content-Type: text/html
-Connection: close❌r❌n❌r❌n🔤❗ ➕ readFile❗️
+							😎🐇🕸 clientSocket readFile ❗
 						🍉
 						🙅‍♀️ error 🍇
 							😀🔤🤯Error: 🧲💬error❗🧲🔤❗
-							💭 return 404, then exit thread(?)
-							😠🐇💾 clientSocket❗
+							↪💬error❗🙌🔤Is a directory🔤🍇
+								🏥🐇🕸 data ❗ ➡ host
+								🤔🐇🕸 clientSocket 🔤🧲dir🧲/🔤 host ❗
 
-							😀🔤Closing socket🔤❗
+								🚪clientSocket❗️
+								😀🔤****************************🔤❗
+								↩↩
+							🍉
+							😠🐇🕸 clientSocket❗
+
 							🚪clientSocket❗️
-							😀🔤End of thread🔤❗
+							😀🔤****************************🔤❗
 							↩↩
 						🍉
-
 					🍉
 					↪❎🤜length 🙌 🔤0🔤 🤛❗🍇
-						😀🔤End of thread🔤❗
+						🚪clientSocket❗️
+						😀🔤****************************🔤❗
 						↩↩
 					🍉
 				🍉 🙅‍♀️ error 🍇
 					😀🔤🤯Error: 🧲💬error❗🧲🔤❗
 				🍉
 			🍉
-			😀🔤Closing socket🔤❗
 			🚪clientSocket❗️
 		🍉❗❗
 	🍉
 	😀🔤End of server code❗❗❗🔤❗
 	↩ 0
+
 🍉
