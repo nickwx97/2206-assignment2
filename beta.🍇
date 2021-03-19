@@ -1,0 +1,127 @@
+📦 sockets 🏠
+📦 files 🏠
+
+🐇 🕸 🍇
+
+	🐇❗ 📛 ➡ 🔡🍇
+		↩ 🔤emojicode-httpd🔤 💭server name
+	🍉
+
+	🐇❗ 👹 ➡ 🔡🍇
+		↩ 🔤webroot/404.html🔤 💭fancy 404
+	🍉
+
+	🐇❗ 😎 clientSocket 📞 readFile 📇 🍇
+		😀🔤200 OK🔤❗
+		📏readFile❓➡conlen
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nCache-Control: max-age=3600❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ readFile❗️
+	🍉
+
+	🐇❗ 😠 clientSocket 📞🍇
+		😀🔤404 Not Found🔤❗
+		🆗 errpage 📇🐇📄👹❗❗ 🍇
+			📏errpage❓ ➡ conlen
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ errpage❗
+		🍉
+		🙅‍♀️ error 🍇
+			😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 49❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌nUhh... 404 page... 404? That's even more awkward.🔤❗❗
+		🍉
+	🍉
+
+	🐇❗ 🏥 data 📇 ➡ 🔡🍇
+		↩🐽🔫🐽🔫🍺🔡data❗ 🔤Host: 🔤❗ 1❗ 🔤❌r❌n🔤❗ 0❗
+	🍉
+🍉
+
+🐇🥎🍇
+	🐇❗ 🎾 clientSocket 📞 dirbytes 📇 data 📇 🍇
+		🔡📏data❓❗ ➡ length
+		😀🍺🔡 data❗️❗️
+		↪🍺🔡🔪data 0 3❗❗ 🙌 🔤GET🔤🍇 💭Process GET
+			🔍data 📇🔤❌r❌n🔤❗ 0❗ ➡ offset
+			🔪data 0 🍺offset❗ ➡ requestline
+			🍺🔡requestline❗ ➡ asciirequestline
+			🔫asciirequestline 🔤 🔤❗ ➡ requestlist
+			🐽requestlist 1❗ ➡ dir
+			dirbytes ➕ 📇dir❗ ➡fp
+			↪⛳dir 🔤/🔤❗️🍇
+				🆗 readFile 📇🐇📄 🔤🧲🍺🔡fp❗🧲index.html🔤 ❗ 🍇
+					😎🐇🕸 clientSocket readFile ❗
+
+					😀🔤****************************🔤❗
+					↩↩
+				🍉
+				🙅‍♀️ error 🍇
+					😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+					😠🐇🕸 clientSocket❗
+
+					😀🔤****************************🔤❗
+					↩↩
+				🍉
+			🍉
+			🕰🐇💻❗➡epoch
+			🕴🐇💻🔤echo -n $(file -b 🧲🍺🔡fp❗🧲) > 🧲epoch🧲.lock🔤 ❗
+			🆗isDir📇🐇📄🔤🧲epoch🧲.lock🔤❗ 🍇
+				↪🍺🔡isDir❗🙌🔤directory🔤🍇
+					😠🐇🕸 clientSocket❗
+					🕴🐇💻🔤rm 🧲epoch🧲.lock > /dev/null🔤 ❗
+					😀🔤****************************🔤❗
+					↩↩
+				🍉
+			🍉
+			🙅‍♀️error🍇
+				😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+			🍉
+			🕴🐇💻🔤rm 🧲epoch🧲.lock > /dev/null🔤 ❗
+			🆗 readFile 📇🐇📄 🍺🔡fp❗ ❗ 🍇
+				😎🐇🕸 clientSocket readFile ❗
+
+				😀🔤****************************🔤❗
+				↩↩
+			🍉
+			🙅‍♀️ error 🍇
+				😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+				😠🐇🕸 clientSocket❗
+
+				😀🔤****************************🔤❗
+				↩↩
+			🍉
+		🍉
+		↪❎🤜length 🙌 🔤0🔤 🤛❗🍇
+			😀🔤****************************🔤❗
+			↩↩
+		🍉
+	🍉
+🍉
+
+💭 Simple HTTP server listening on port 8888
+🏁 ➡️ 🔢 🍇
+
+	🕴🐇💻🔤SCRIPT=$(pwd); echo -n $SCRIPT > currentdir; chmod 600 currentdir🔤 ❗
+	📇🔤/🔤❗➡🖍🆕dirbytes
+	🆗tempdirbytes 📇🐇📄🔤currentdir🔤❗ 🍇
+		tempdirbytes➕📇🔤/webroot🔤❗➡🖍dirbytes
+	🍉
+	🙅‍♀️error🍇
+		😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+		🚪🐇💻-1❗
+	🍉
+	🍺🆕🏄 8888❗️ ➡️ server
+	😀🔤🧲📛🐇🕸❗🧲 Started❌n🔤❗
+	😀🔤****************************🔤❗
+	🔁👍🍇
+		🍺 🙋 server❗️ ➡️ clientSocket
+		🛂🆕🧵 🍇 🎍🥡
+			🆗 data 👂 clientSocket 8192❗️ 🍇 💭Read 8192 bytes (max size for HTTP requests)
+				🎾🐇🥎clientSocket dirbytes data❗
+			🍉 🙅‍♀️ error 🍇
+				😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+			🍉
+			🚪clientSocket❗️
+		🍉❗❗
+	🍉
+	😀🔤End of server code❗❗❗🔤❗
+	↩ 0
+
+🍉
