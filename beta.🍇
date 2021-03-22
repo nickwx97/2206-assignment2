@@ -14,18 +14,18 @@
 	🐇❗ 😎 clientSocket 📞 readFile 📇 🍇
 		😀🔤200 OK🔤❗
 		📏readFile❓➡conlen
-		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nCache-Control: max-age=3600❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ readFile❗️
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nCache-Control: max-age=3600❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ readFile❗️
 	🍉
 
 	🐇❗ 😠 clientSocket 📞🍇
 		😀🔤404 Not Found🔤❗
 		🆗 errpage 📇🐇📄👹❗❗ 🍇
 			📏errpage❓ ➡ conlen
-			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ errpage❗
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ errpage❗
 		🍉
 		🙅‍♀️ error 🍇
 			😀🔤🤯Error: 🧲💬error❗🧲🔤❗
-			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 49❌r❌nContent-Type: text/html❌r❌nConnection: close❌r❌n❌r❌nUhh... 404 page... 404? That's even more awkward.🔤❗❗
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 49❌r❌nConnection: close❌r❌n❌r❌nUhh... 404 page... 404? That's even more awkward.🔤❗❗
 		🍉
 	🍉
 
