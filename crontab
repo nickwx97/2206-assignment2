@@ -1,0 +1,1 @@
+0 12 * * * /bin/systemctl restart emojicode-httpd.service

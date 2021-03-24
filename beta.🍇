@@ -1,8 +1,7 @@
 📦 sockets 🏠
 📦 files 🏠
 
-🐇 🕸 🍇
-
+🐇😱🍇
 	🐇❗ 📛 ➡ 🔡🍇
 		↩ 🔤emojicode-httpd🔤 💭server name
 	🍉
@@ -10,22 +9,60 @@
 	🐇❗ 👹 ➡ 🔡🍇
 		↩ 🔤webroot/404.html🔤 💭fancy 404
 	🍉
+🍉
+
+🐇 🕸 🍇
 
 	🐇❗ 😎 clientSocket 📞 readFile 📇 🍇
 		😀🔤200 OK🔤❗
 		📏readFile❓➡conlen
-		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nCache-Control: max-age=3600❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ readFile❗️
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nCache-Control: max-age=3600❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ readFile❗️
 	🍉
 
 	🐇❗ 😠 clientSocket 📞🍇
 		😀🔤404 Not Found🔤❗
-		🆗 errpage 📇🐇📄👹❗❗ 🍇
+		🆗 errpage 📇🐇📄👹🐇😱❗❗ 🍇
 			📏errpage❓ ➡ conlen
-			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ errpage❗
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nConnection: close❌r❌n❌r❌n🔤❗ ➕ errpage❗
 		🍉
 		🙅‍♀️ error 🍇
 			😀🔤🤯Error: 🧲💬error❗🧲🔤❗
-			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛❗🧲❌r❌nContent-Length: 49❌r❌nConnection: close❌r❌n❌r❌nUhh... 404 page... 404? That's even more awkward.🔤❗❗
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌nContent-Length: 49❌r❌nConnection: close❌r❌n❌r❌nUhh... 404 page... 404? That's even more awkward.🔤❗❗
+		🍉
+	🍉
+
+	🐇❗ 🤹‍♀️ clientSocket📞🍇
+		😀🔤200 OK🔤❗
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nConnection: close❌r❌nAllow: OPTIONS, GET, HEAD❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌n❌r❌n🔤❗❗
+	🍉
+
+	🐇❗ 🤫 clientSocket📞🍇
+		😀🔤405 Method Not Allowed🔤❗
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 405 Method Not Allowed❌r❌nConnection: close❌r❌nAllow: OPTIONS, GET, HEAD❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌n❌r❌n🔤❗❗
+	🍉
+
+	🐇❗ 🏥 data 📇 ➡ 🔡🍇
+		↩🐽🔫🐽🔫🍺🔡data❗ 🔤Host: 🔤❗ 1❗ 🔤❌r❌n🔤❗ 0❗
+	🍉
+🍉
+
+🐇 🗣 🍇
+
+	🐇❗ 😎 clientSocket 📞 readFile 📇 🍇
+		😀🔤HEAD 200 OK🔤❗
+		📏readFile❓➡conlen
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nCache-Control: max-age=3600❌r❌nConnection: close❌r❌n❌r❌n🔤❗❗️
+	🍉
+
+	🐇❗ 😠 clientSocket 📞🍇
+		😀🔤HEAD 404 Not Found🔤❗
+		🆗 errpage 📇🐇📄👹🐇😱❗❗ 🍇
+			📏errpage❓ ➡ conlen
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌nContent-Length: 🧲conlen🧲❌r❌nConnection: close❌r❌n❌r❌n🔤❗❗
+		🍉
+		🙅‍♀️ error 🍇
+			😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+			🍺 💬 clientSocket 📇🔤HTTP/1.1 404 Not Found❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌nContent-Length: 49❌r❌nConnection: close❌r❌n❌r❌n🔤❗❗
 		🍉
 	🍉
 
@@ -35,6 +72,7 @@
 🍉
 
 🐇🥎🍇
+
 	🐇❗ 🎾 clientSocket 📞 dirbytes 📇 data 📇 🍇
 		🔡📏data❓❗ ➡ length
 		😀🍺🔡 data❗️❗️
@@ -88,10 +126,64 @@
 				↩↩
 			🍉
 		🍉
-		↪❎🤜length 🙌 🔤0🔤 🤛❗🍇
-			😀🔤****************************🔤❗
-			↩↩
+		🙅‍♀️↪🍺🔡🔪data 0 7❗❗ 🙌 🔤OPTIONS🔤🍇 💭Process OPTIONS
+			🤹‍♀️🐇🕸 clientSocket❗
 		🍉
+		🙅‍♀️↪🍺🔡🔪data 0 4❗❗ 🙌 🔤HEAD🔤🍇 💭Process HEAD
+			🔍data 📇🔤❌r❌n🔤❗ 0❗ ➡ offset
+			🔪data 0 🍺offset❗ ➡ requestline
+			🍺🔡requestline❗ ➡ asciirequestline
+			🔫asciirequestline 🔤 🔤❗ ➡ requestlist
+			🐽requestlist 1❗ ➡ dir
+			dirbytes ➕ 📇dir❗ ➡fp
+			↪⛳dir 🔤/🔤❗️🍇
+				🆗 readFile 📇🐇📄 🔤🧲🍺🔡fp❗🧲index.html🔤 ❗ 🍇
+					😎🐇🗣 clientSocket readFile ❗
+
+					😀🔤****************************🔤❗
+					↩↩
+				🍉
+				🙅‍♀️ error 🍇
+					😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+					😠🐇🗣 clientSocket❗
+
+					😀🔤****************************🔤❗
+					↩↩
+				🍉
+			🍉
+			🕰🐇💻❗➡epoch
+			🕴🐇💻🔤echo -n $(file -b 🧲🍺🔡fp❗🧲) > 🧲epoch🧲.lock🔤 ❗
+			🆗isDir📇🐇📄🔤🧲epoch🧲.lock🔤❗ 🍇
+				↪🍺🔡isDir❗🙌🔤directory🔤🍇
+					😠🐇🗣 clientSocket❗
+					🕴🐇💻🔤rm 🧲epoch🧲.lock > /dev/null🔤 ❗
+					😀🔤****************************🔤❗
+					↩↩
+				🍉
+			🍉
+			🙅‍♀️error🍇
+				😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+			🍉
+			🕴🐇💻🔤rm 🧲epoch🧲.lock > /dev/null🔤 ❗
+			🆗 readFile 📇🐇📄 🍺🔡fp❗ ❗ 🍇
+				😎🐇🗣 clientSocket readFile ❗
+
+				😀🔤****************************🔤❗
+				↩↩
+			🍉
+			🙅‍♀️ error 🍇
+				😀🔤🤯Error: 🧲💬error❗🧲🔤❗
+				😠🐇🗣 clientSocket❗
+
+				😀🔤****************************🔤❗
+				↩↩
+			🍉
+		🍉
+		🙅‍♀️🍇 💭Any other methods, 405
+			🤫🐇🕸 clientSocket❗
+		🍉
+		💭 End of request parsing
+		😀🔤****************************🔤❗
 	🍉
 🍉
 
@@ -108,7 +200,7 @@
 		🚪🐇💻-1❗
 	🍉
 	🍺🆕🏄 8888❗️ ➡️ server
-	😀🔤🧲📛🐇🕸❗🧲 Started❌n🔤❗
+	😀🔤🧲📛🐇😱❗🧲 Started❌n🔤❗
 	😀🔤****************************🔤❗
 	🔁👍🍇
 		🍺 🙋 server❗️ ➡️ clientSocket
