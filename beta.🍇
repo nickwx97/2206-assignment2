@@ -1,6 +1,7 @@
 📦 sockets 🏠
 📦 files 🏠
 
+💭 Name & filepath definitions
 🐇😱🍇
 	🐇❗ 📛 ➡ 🔡🍇
 		↩ 🔤emojicode-httpd🔤 💭server name
@@ -9,8 +10,13 @@
 	🐇❗ 👹 ➡ 🔡🍇
 		↩ 🔤webroot/404.html🔤 💭fancy 404
 	🍉
+
+	🐇❗ 🌳 ➡ 🔡🍇
+		↩ 🔤webroot🔤 💭webpage root directory
+	🍉
 🍉
 
+💭non-HEAD responses
 🐇 🕸 🍇
 
 	🐇❗ 😎 clientSocket 📞 readFile 📇 🍇
@@ -46,6 +52,7 @@
 	🍉
 🍉
 
+💭HEAD responses
 🐇 🗣 🍇
 
 	🐇❗ 😎 clientSocket 📞 readFile 📇 🍇
@@ -66,11 +73,9 @@
 		🍉
 	🍉
 
-	🐇❗ 🏥 data 📇 ➡ 🔡🍇
-		↩🐽🔫🐽🔫🍺🔡data❗ 🔤Host: 🔤❗ 1❗ 🔤❌r❌n🔤❗ 0❗
-	🍉
 🍉
 
+💭request "server"(haha tennis) aka handler
 🐇🥎🍇
 
 	🐇❗ 🎾 clientSocket 📞 dirbytes 📇 data 📇 🍇
@@ -193,7 +198,7 @@
 	🕴🐇💻🔤SCRIPT=$(pwd); echo -n $SCRIPT > currentdir; chmod 600 currentdir🔤 ❗
 	📇🔤/🔤❗➡🖍🆕dirbytes
 	🆗tempdirbytes 📇🐇📄🔤currentdir🔤❗ 🍇
-		tempdirbytes➕📇🔤/webroot🔤❗➡🖍dirbytes
+		tempdirbytes➕📇🔤/🧲🌳🐇😱❗🧲🔤❗➡🖍dirbytes
 	🍉
 	🙅‍♀️error🍇
 		😀🔤🤯Error: 🧲💬error❗🧲🔤❗
