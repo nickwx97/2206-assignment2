@@ -42,9 +42,13 @@
 		🍺 💬 clientSocket 📇🔤HTTP/1.1 200 OK❌r❌nConnection: close❌r❌nAllow: OPTIONS, GET, HEAD❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌n❌r❌n🔤❗❗
 	🍉
 
+	💭Not sure if 405 Method Not Allowed or 501 Not Implemented is more appropriate...
 	🐇❗ 🤫 clientSocket📞🍇
-		😀🔤405 Method Not Allowed🔤❗
-		🍺 💬 clientSocket 📇🔤HTTP/1.1 405 Method Not Allowed❌r❌nConnection: close❌r❌nAllow: OPTIONS, GET, HEAD❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌n❌r❌n🔤❗❗
+		😀🔤501 Not Implemented🔤❗
+		🍺 💬 clientSocket 📇🔤HTTP/1.1 501 Not Implemented❌r❌nConnection: close❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌n❌r❌n🔤❗❗
+
+		💭😀🔤405 Method Not Allowed🔤❗
+		💭🍺 💬 clientSocket 📇🔤HTTP/1.1 405 Method Not Allowed❌r❌nConnection: close❌r❌nAllow: OPTIONS, GET, HEAD❌r❌nServer: 🧲📛🐇😱❗🧲❌r❌n❌r❌n🔤❗❗
 	🍉
 
 	🐇❗ 🏥 data 📇 ➡ 🔡🍇
@@ -184,7 +188,7 @@
 				↩↩
 			🍉
 		🍉
-		🙅‍♀️🍇 💭Any other methods, 405
+		🙅‍♀️🍇 💭Any other methods, 501
 			🤫🐇🕸 clientSocket❗
 		🍉
 		💭 End of request parsing
