@@ -4,7 +4,7 @@ Description=EmojiCode-httpd
 [Service]
 User=tiensi
 WorkingDirectory=/home/tiensi/webserver/
-ExecStart=/home/tiensi/webserver/beta
+ExecStart=/home/tiensi/webserver/server
 Restart=always
 
 [Install]
