@@ -91,8 +91,9 @@
 			🍺🔡requestline❗ ➡ asciirequestline
 			🔫asciirequestline 🔤 🔤❗ ➡ requestlist
 			🐽requestlist 1❗ ➡ dir
-			dirbytes ➕ 📇dir❗ ➡fp
-			↪⛳dir 🔤/🔤❗️🍇
+			dirbytes ➕ 📇🐽🔫dir 🔤?🔤❗ 0❗❗ ➡fp
+
+			↪⛳🍺🔡fp❗ 🔤/🔤❗️🍇
 				🆗 readFile 📇🐇📄 🔤🧲🍺🔡fp❗🧲index.html🔤 ❗ 🍇
 					😎🐇🕸 clientSocket readFile ❗
 
@@ -144,8 +145,9 @@
 			🍺🔡requestline❗ ➡ asciirequestline
 			🔫asciirequestline 🔤 🔤❗ ➡ requestlist
 			🐽requestlist 1❗ ➡ dir
-			dirbytes ➕ 📇dir❗ ➡fp
-			↪⛳dir 🔤/🔤❗️🍇
+			dirbytes ➕ 📇🐽🔫dir 🔤?🔤❗ 0❗❗ ➡fp
+
+			↪⛳🍺🔡fp❗ 🔤/🔤❗️🍇
 				🆗 readFile 📇🐇📄 🔤🧲🍺🔡fp❗🧲index.html🔤 ❗ 🍇
 					😎🐇🗣 clientSocket readFile ❗
 
